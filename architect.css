@@ -48,6 +48,7 @@ nav{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    vw:100%;
 
 }
 .nava{
@@ -61,6 +62,7 @@ nav{
    display:flex;
    align-items: center;
    justify-content:center;
+   
 }
 .head-descrip{
     font-family: Work Sans;
@@ -70,8 +72,9 @@ text-align: center;
 color:#727272;
 border:2px solid skyblue;
 margin:30px 180px;
+font-size: 16px;
 }
-.explore{
+.expl{
     width: 120px;
 height: 60px;
 border-radius: 8px;
@@ -81,9 +84,9 @@ font-family: Work Sans;
 font-size: 20px;
 font-weight: 600;
 color:#FFFFFF;
-text-align: center;
+text-align: center;}
 
-}
+
 .des{
     
         color: #424242;
@@ -96,19 +99,141 @@ text-align: center;
     width:100%;
     height: 100%;
 }
+h1.headline {
+    font-family: Work Sans;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.second{
+    display:flex;
+    flex-direction:row;
+    vw:100%;
+}
+.second>.images{
+    vw:50%;
+}
+.right{
+    vw:50%;
+}
+.images{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-column-gap:3px;
+}
+.rght{
+    font-family: Work Sans;
+font-size: 45px;
+font-weight: 500;
+line-height: 53px;
+letter-spacing: 0em;
+text-align: left;
+margin:4em 0em .8em 1.7em;
+
+}
+.rght-des{
+    font-family: Work Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+margin:1.5em 0em 2em 4.5625em;
+flex-wrap:wrap;
+}
+.ex{
+    display:flex;
+    align-items:left;
+    justify-content:left;
+    }
+.explore{
+    margin:32px 400px 202px 73px;
+    width: 120px;
+    height: 60px;
+    border-radius: 8px;
+    background-color:#FF900E;
+    
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    color:#FFFFFF;
+    text-align: center;
+}
+.third{
+    display:flex;
+    flex-direction: row;
+    max-width: 100%;
+max-height: 100%;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 @media screen and (max-width:576px){
-    nav,.logo,.navbar,.header-content,.head-descrip,.explore,.img{
+    nav,.logo,.navbar,.header-content,.head-descrip,.img,.exp,.second,.images,.right,.exp{
        display:flex;
        flex-direction:row;
        flex-wrap: wrap;
        align-items:center;
-       justify-content: flex-end;
-       padding:10px;
+       justify-content:center;
+       padding:3px;
+       margin:0;
+       width:100%;
+
+    }
+    .rght-des{
+        display:flex;
+        flex-direction:row;
+        font-size: 13px;
+    }
+    .exp{
+        padding:1px;
+       
+        display:flex;
+        flex-direction:row;
+        
+        align-items:center;
+        justify-content: center;
+    }
+       
+    .explore{
+        width: 120px;
+    height: 60px;
+    border-radius: 8px;
+    background-color:#FF900E;
+    margin:0px;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    color:#FFFFFF;
+    text-align: center;
+    
+    }
+    ex{
+        display:flex;
+        flex-direction:row;
+        
+        align-items:center;
+        justify-content: center;
+        border:3px solid red;
     }
     .engi{
         width:100%;
@@ -120,4 +245,41 @@ text-align: center;
     .logo{
         font-size:3rem;
     }
+    
+
+  .head-descrip {
+    margin: 0px;
+    margin-bottom: 2px;
+}
+.rght{font-family: Work Sans;
+font-size: 20px;
+font-weight: 500;
+display:flex;
+flex-direction: row;
+padding:1px;
+text-align:center;
+justify-content:center;
+align-items:center;
+
+margin:0px;
+}
+}
+
+@media screen and (min-width:577px) and (max-width:768px){
+    nav,.logo,.navbar,.header-content,.head-descrip,.explore,.img{
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content: flex-end;}
+   
+   
+    .exp{
+    
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    
+}
+    
 }

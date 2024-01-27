@@ -258,13 +258,13 @@ text-align: center;
 }
 .box{
     padding:60px 35px;
-    border:1px solid red;
+  
 }
 .ribon{
     display:flex;
     align-items:center;
     justify-content:center;
-    border:1px solid red;
+  
 }
 .box>.ribom{
     display:flex;
